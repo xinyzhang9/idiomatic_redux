@@ -1,10 +1,13 @@
 import React, { PropTypes } from 'react';
 import { Provider } from 'react-redux';
+import { BrowserRouter, Route, browserHistory } from 'react-router-dom';
 import App from './App';
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <App />
+    <BrowserRouter history={browserHistory}>
+      <Route path="/" component={App} />
+    </BrowserRouter>
   </Provider>
 );
 
