@@ -12,7 +12,7 @@ const fakeDatabase = {
   }, {
     id: v4(),
     text: 'Don\'t cry',
-    completed: true,
+    completed: false,
   }],
 };
 
