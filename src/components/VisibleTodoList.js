@@ -29,7 +29,7 @@ class VisibleTodoList extends Component {
 
 VisibleTodoList.propTypes = {
   filter: PropTypes.oneOf(['all', 'active', 'completed']).isRequired,
-  receiveTodos: PropTypes.func.isRequired,
+  fetchTodos: PropTypes.func.isRequired,
   toggleTodo: PropTypes.func.isRequired,
 };
 
